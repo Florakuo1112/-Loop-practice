@@ -152,8 +152,11 @@ const door = '🚪';
 const beam = '骨';
 const empty = "空";
 
+buildHouse(1)
+buildHouse(2)
 buildHouse(3)
-
+buildHouse(4)
+buildHouse(5)
 function buildHouse(houseNum){
 
     for(let i=0; i<houseNum ; i++){
@@ -188,53 +191,20 @@ function buildHouse(houseNum){
       
     
     }
-    
+    console.log(row)
     house.push(row.join(''))
     
     }
 
-    console.log(house.join("\n"))
+    console.log(house.join("\n"));
+    
 
 }
 
 
 
-// for(let i=0; i<houseNum ; i++){
-//     let row = [];
 
-//     for(let j=0; j<houseNum; j++){
-//         //門的位置
-//         if(houseNum > 2 && i==0 && houseNum%2==0 && j==Math.floor(houseNum/2)-1){
-//            row.splice(j,0,door)
-//         }else if(houseNum > 2 && i==0 && houseNum%2 !== 0 && j==Math.floor(houseNum /2)){
-//             row.splice(j,0,door)
-//         }
-        
-//         else{
-//             //四周磚塊的位置, 沒放磚塊的就放空白
-//             if(i==0 || i==houseNum-1 || j==0 || j==houseNum-1){
-//                 row.push(brick)
-//             }else{
-//                 row.push(empty)
-//             }
-//             //四個角要放骨
-//             if(houseNum >2){
-//                 if((i==0 && j==0) || (i==0 && j==houseNum-1) || (i==houseNum-1 && j==0) || (i==houseNum-1 && j==houseNum-1)){
-//                     row.splice(j,1,beam)
-//                      //對角線要放骨
-//                 }else if(i==j || i+j ==houseNum-1){
-//                     row.splice(j,1,beam)
-//                 }
-//             }
-            
-//         }
-  
 
-// }
-
-// house.push(row.join(''))
-
-// }
 
 
 
